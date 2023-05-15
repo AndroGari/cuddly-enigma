@@ -3,13 +3,13 @@
 Text Overlap Detection  To classify whether a creative has image and text overlap or not. Given an input creative (combination of image and text), 
 it should be able to tell if the text infringes upon the image and makes a poor creative.
 
-Model results can be viewed here: [Model Results]([https://github.com/Hrushi11/TextOverlapDetection/tree/main/Plot%20Curves](https://github.com/AndroGari/cuddly-enigma/tree/master/Plot%20Curves)). <br>
-Notebook for model can be viewed here: [Notebook]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/TextOverlapDetection.ipynb](https://github.com/AndroGari/cuddly-enigma/blob/master/TextOverlapDetection.ipynb)). <br>
-All predictions made by the model can be viewed here: [Predictions]([https://github.com/Hrushi11/TextOverlapDetection/tree/main/Results](https://github.com/AndroGari/cuddly-enigma/tree/master/Results))
+Model results can be viewed here: [Model Results](https://github.com/AndroGari/cuddly-enigma/tree/master/Plot%20Curves). <br>
+Notebook for model can be viewed here: [Notebook](https://github.com/AndroGari/cuddly-enigma/blob/master/TextOverlapDetection.ipynb). <br>
+All predictions made by the model can be viewed here: [Predictions](https://github.com/AndroGari/cuddly-enigma/tree/master/Results)
 
 The creatives may contain an overlapping of text in an image. Some of the examples for the same are shown here.
 
-![img]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/Images/1_Overlap.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/1_Overlap.png))
+![img](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/1_Overlap.png)
 
 ## Approaches 
 
@@ -26,7 +26,7 @@ generating False Positives.
 
 For example, here in this case, the text is not overlapping but the bounding box is.
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/UtilRes/boundW.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/boundW.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/boundW.png)
 
 ### Approach 2
 
@@ -37,13 +37,13 @@ Trained custom YOLO model for target prediction. (Normal YOLO model will not con
 
 Some examples for the same are:
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/Results/4_Overlap.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/4_Overlap.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/4_Overlap.png)
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/Results/7_Overlap.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/7_Overlap.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/7_Overlap.png)
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/Results/5_NoOverlap.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/5_NoOverlap.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/5_NoOverlap.png)
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/Results/6_Overlap.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/6_Overlap.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/Results/6_Overlap.png)
 
 **This approach turns out to be the best computationally as well as accuracy wise. We detect all the test images correctlly with this approach.**
 
@@ -53,13 +53,13 @@ This is a strainght forward approach where we train a classification based objec
 
 The accuracy for this model is very low, and it fails for most of the cases.
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/UtilRes/check.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/check.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/check.png)
 
 ### Approach 4
 
 This is a bit computationally expensive approach but very high at accuracy. Here we segment the target objects to exactly get the location of target and then segment the words as well.
 
-![IMG]([https://github.com/Hrushi11/TextOverlapDetection/blob/main/UtilRes/segmetn.png?raw=true](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/segmetn.png))
+![IMG](https://github.com/AndroGari/cuddly-enigma/blob/master/UtilRes/segmetn.png)
 
 ## Future Scope
 
